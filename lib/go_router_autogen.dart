@@ -3,7 +3,7 @@ library go_router_autogen;
 export 'annotations.dart' show RoutePage;
 
 import 'package:build/build.dart';
-import 'package:go_router_generator_plus/generator.dart';
+import 'package:go_router_autogen/generator.dart';
 import 'package:source_gen/source_gen.dart';
 
 Builder routeBuilder(BuilderOptions options) => LibraryBuilder(

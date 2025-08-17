@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:build/build.dart';
-import 'package:go_router_generator_plus/annotations.dart';
+import 'package:go_router_autogen/annotations.dart';
 import 'package:source_gen/source_gen.dart';
 import 'utils.dart';
 
