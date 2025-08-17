@@ -1,6 +1,6 @@
 name: go_router_autogen
 description: Generate go_router routes from @RoutePage() annotations with zero manual paths/names.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/neotin695/go_router_autogen
 issue_tracker: https://github.com/neotin695/go_router_autogen/issues
 homepage: https://github.com/neotin695/go_router_autogen
