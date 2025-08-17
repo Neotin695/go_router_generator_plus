@@ -1,0 +1,21 @@
+targets:
+  $default:
+    builders:
+      go_router_autogen|route_builder:
+        generate_for:
+          - lib/**.dart
+
+builders:
+  route_builder:
+    import: "package:go_router_autogen/go_router_autogen.dart"
+    builder_factories: ["routeBuilder"]
+    build_extensions: {".dart": [".routes.g.dart"]}
+    auto_apply: dependents
+    build_to: cache
+
+  routes_emitter:
+    import: "package:go_router_autogen/go_router_autogen.dart"
+    builder_factories: ["routesEmitter"]
+    build_extensions: {"\$lib\$": ["routes.g.dart"]}
+    auto_apply: dependents
+    build_to: source
